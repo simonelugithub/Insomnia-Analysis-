@@ -26,22 +26,22 @@ Sessions were then carried out to understand which variables to take from the qu
 
     Stress level (from a scale of 1 to 7).
 
-#Feature engineering:
+# Feature engineering:
 
 Before starting to implement the algorithm to our dataset, we proceeded as the data science process dictates with feature work.
 We transformed the variable "sleeping difficulty" via the "one hot encoding" method into 1 if a person had problems recently 0 otherwise. Then for the independent variables, we brought them on the same scale since the KNN chooses the k closest to the neighbours and then based on that, it assigns the class or predicts a value.
 
-#Algorithm:
+# Algorithm:
 
 Among the most plausible algorithms for our classification problem are logistic regression and knn. The reasons why we chose knn: First, we have a small dataset of 30 data points. Second, we have appropriately labelled data because we are predicting someone is having sleeping disorder or not, the outcome can be 1 or 0.
 Finally, we choose knn because it is a non-parametric method, and it is suitable when we are considering the order of something, where even if the numerical data change, but the outcome may remain the same.
 
-#Model training:
+# Model training:
 
 Before proceeding to model training, we performed the data split, 25% as test data. This process is necessary to test the performance of the model we are going to implement.
 Then as a performance metric we chose k = 5 following the elbow method, which is one of the most popular methods of determining the optimal value of k.
 
-#Authors
+# Authors
 
 - Enrico Romano
 - Simone Lu
